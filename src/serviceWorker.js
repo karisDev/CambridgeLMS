@@ -46,3 +46,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     sendResponse("Голуби отправлены");
   }
 });
+
+chrome.runtime.onInstalled.addListener(function () {
+  chrome.tabs.create({ url: "https://karisdev.github.io/CambridgeLMS/" });
+});
