@@ -34,6 +34,7 @@
         font-weight: 500;
         font-size: 48px;
       }
+      /* add box shadow for each letter */
       .greetings {
         user-select: none;
         margin-top: 2rem;
@@ -45,8 +46,17 @@
         text-align: center;
         box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
       }
-      .greetings span {
-        text-align: left;
+      .small_guide {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        align-items: center;
+      }
+      .separator {
+        margin: 4px 0;
+        width: 50px;
+        height: 2px;
+        background-color: #9f9f9f;
       }
       .contacts {
         user-select: none;
@@ -81,12 +91,15 @@
         <br />
         Я тут развешу декорации и сделаю красивое FAQ (возможно), а пока:
       </p>
-      <span class="">
-        Клик по красному тексту - скопирует его и перекрасит в синий цвет
-        <br />
-        Клик по зеленому номеру строки - скопирует всю строку и перекрасит в
-        зеленый
-      </span>
+      <div class="small_guide">
+        <p>Клик по красному тексту - скопирует его и перекрасит в синий</p>
+        <span class="separator"></span>
+        <p>Клик по зеленому номеру строки - скопирует строку целиком</p>
+        <span class="separator"></span>
+        <p style="color: #5f5f5f">
+          (полезно в некоторых заданиях, вставлять в поле нужно самому)
+        </p>
+      </div>
     </article>
     <div class="contacts">
       <h3>
