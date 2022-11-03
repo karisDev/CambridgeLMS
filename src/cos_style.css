@@ -1,0 +1,40 @@
+body {
+  min-height: 2000px !important;
+}
+.cos_container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #242424;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid white;
+  z-index: 9999;
+  opacity: 0.9;
+}
+.cos_container div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.cos_container b {
+  font-weight: 700;
+  color: red;
+  cursor: pointer;
+}
+.cos_container b:hover {
+  background-color: red;
+  color: white;
+}
+/* set style for first element in cos_container */
+.cos_container .number {
+  color: green;
+  cursor: pointer;
+}
+.cos_container .number:hover {
+  background-color: green;
+  color: white;
+}
